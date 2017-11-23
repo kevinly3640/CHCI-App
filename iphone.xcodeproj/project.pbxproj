@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1A691F1FB607E1006364B6 /* IDAutomationHC39M Free Version.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F1A691E1FB60787006364B6 /* IDAutomationHC39M Free Version.ttf */; };
+		3FD13CBA1FC7515900A8DAC7 /* LandscapeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD13CB91FC7515900A8DAC7 /* LandscapeCard.swift */; };
+		3FDFDC051FC5C2D100B715F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDFDC041FC5C2D100B715F0 /* HomeViewController.swift */; };
+		3FDFDC071FC5C33800B715F0 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDFDC061FC5C33800B715F0 /* ScheduleViewController.swift */; };
+		3FDFDC091FC5C36E00B715F0 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDFDC081FC5C36E00B715F0 /* AnnouncementsViewController.swift */; };
+		3FDFDC0B1FC5C39400B715F0 /* StudentCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDFDC0A1FC5C39400B715F0 /* StudentCardViewController.swift */; };
 		3FF35C681FA37A6600DE7086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF35C671FA37A6600DE7086 /* AppDelegate.swift */; };
 		3FF35C6A1FA37A6600DE7086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF35C691FA37A6600DE7086 /* ViewController.swift */; };
 		3FF35C6D1FA37A6600DE7086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF35C6B1FA37A6600DE7086 /* Main.storyboard */; };
@@ -34,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F1A691D1FB1FF34006364B6 /* BarcodeFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BarcodeFont.ttf; sourceTree = "<group>"; };
+		3F1A691E1FB60787006364B6 /* IDAutomationHC39M Free Version.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IDAutomationHC39M Free Version.ttf"; sourceTree = "<group>"; };
+		3FD13CB91FC7515900A8DAC7 /* LandscapeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeCard.swift; sourceTree = "<group>"; };
+		3FDFDC041FC5C2D100B715F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3FDFDC061FC5C33800B715F0 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		3FDFDC081FC5C36E00B715F0 /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
+		3FDFDC0A1FC5C39400B715F0 /* StudentCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCardViewController.swift; sourceTree = "<group>"; };
 		3FF35C641FA37A6600DE7086 /* iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF35C671FA37A6600DE7086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FF35C691FA37A6600DE7086 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +94,7 @@
 				3FF35C7B1FA37A6600DE7086 /* iphoneTests */,
 				3FF35C861FA37A6600DE7086 /* iphoneUITests */,
 				3FF35C651FA37A6600DE7086 /* Products */,
+				3F1A691E1FB60787006364B6 /* IDAutomationHC39M Free Version.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +114,13 @@
 				3FF35C671FA37A6600DE7086 /* AppDelegate.swift */,
 				3FF35C691FA37A6600DE7086 /* ViewController.swift */,
 				3FF35C6B1FA37A6600DE7086 /* Main.storyboard */,
+				3FDFDC041FC5C2D100B715F0 /* HomeViewController.swift */,
+				3FD13CB91FC7515900A8DAC7 /* LandscapeCard.swift */,
+				3FDFDC061FC5C33800B715F0 /* ScheduleViewController.swift */,
+				3FDFDC081FC5C36E00B715F0 /* AnnouncementsViewController.swift */,
+				3FDFDC0A1FC5C39400B715F0 /* StudentCardViewController.swift */,
 				3FF35C6E1FA37A6600DE7086 /* Assets.xcassets */,
+				3F1A691D1FB1FF34006364B6 /* BarcodeFont.ttf */,
 				3FF35C701FA37A6600DE7086 /* LaunchScreen.storyboard */,
 				3FF35C731FA37A6600DE7086 /* Info.plist */,
 			);
@@ -232,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F1A691F1FB607E1006364B6 /* IDAutomationHC39M Free Version.ttf in Resources */,
 				3FF35C721FA37A6600DE7086 /* LaunchScreen.storyboard in Resources */,
 				3FF35C6F1FA37A6600DE7086 /* Assets.xcassets in Resources */,
 				3FF35C6D1FA37A6600DE7086 /* Main.storyboard in Resources */,
@@ -261,6 +282,11 @@
 			files = (
 				3FF35C6A1FA37A6600DE7086 /* ViewController.swift in Sources */,
 				3FF35C681FA37A6600DE7086 /* AppDelegate.swift in Sources */,
+				3FDFDC091FC5C36E00B715F0 /* AnnouncementsViewController.swift in Sources */,
+				3FDFDC051FC5C2D100B715F0 /* HomeViewController.swift in Sources */,
+				3FDFDC0B1FC5C39400B715F0 /* StudentCardViewController.swift in Sources */,
+				3FDFDC071FC5C33800B715F0 /* ScheduleViewController.swift in Sources */,
+				3FD13CBA1FC7515900A8DAC7 /* LandscapeCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
