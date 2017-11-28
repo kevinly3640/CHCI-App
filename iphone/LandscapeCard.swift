@@ -21,6 +21,13 @@ class LandscapeCard: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isPortrait {
+            
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "tabs") as! UITabBarController
+            self.present(next, animated: true, completion: nil)
+        }
+    }
 
     /*
     // MARK: - Navigation

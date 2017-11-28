@@ -35,6 +35,8 @@ class StudentCardViewController: UIViewController {
         func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
             return UIInterfaceOrientation.landscapeLeft
         }
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
+        self.present(next, animated: true, completion: nil)
     }
     
     

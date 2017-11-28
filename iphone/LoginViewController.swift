@@ -1,18 +1,19 @@
 //
-//  HomeViewController.swift
+//  LoginViewController.swift
 //  iphone
 //
-//  Created by CS Student on 2017-11-22.
+//  Created by CS Student on 2017-11-27.
 //  Copyright © 2017 CS Student. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class LoginViewController: UIViewController {
 
+    @IBOutlet weak var UserNameText: UITextField!
+    @IBOutlet weak var PasswordText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
         // Do any additional setup after loading the view.
     }
@@ -21,14 +22,21 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if UIDevice.current.orientation.isLandscape {
+    
+    @IBOutlet weak var LoginButton: UIButton!
+    @IBAction func LoginBtnPressed(_ sender: Any) {
+        if(UserNameText.text == "" && PasswordText.text == "")
+        {
             self.dismiss(animated: true, completion: nil)
-            let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "tabs") as! UITabBarController
             self.present(next, animated: true, completion: nil)
         }
+        else{
+            print("nope")
+        }
     }
-
+ 
+    
     /*
     // MARK: - Navigation
 

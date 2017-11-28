@@ -21,7 +21,12 @@ class AnnouncementsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isLandscape {
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
+            self.present(next, animated: true, completion: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 
