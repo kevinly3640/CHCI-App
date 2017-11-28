@@ -1,2 +1,0 @@
-# CHCI-App
-AY LMAO
