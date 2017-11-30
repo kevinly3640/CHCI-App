@@ -938,7 +938,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="student number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXx-Or-HRR">
-                                <rect key="frame" x="93" y="343.5" width="189.5" height="54.5"/>
+                                <rect key="frame" x="134.5" y="362" width="106.5" height="17.5"/>
                                 <fontDescription key="fontDescription" name="IDAutomationHC39MFreeVersion" family="IDAutomationHC39M Free Version" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1057,7 +1057,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="student number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAT-ew-R9K">
-                                <rect key="frame" x="29.5" y="365" width="316" height="100"/>
+                                <rect key="frame" x="99" y="365" width="177" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="FZX-Rm-OpP"/>
                                 </constraints>
