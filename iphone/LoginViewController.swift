@@ -7,9 +7,11 @@
 //
 
 import UIKit
-
+var loggedin = false
 class LoginViewController: UIViewController {
 
+
+    @IBOutlet weak var LoginText: UILabel!
     @IBOutlet weak var UserNameText: UITextField!
     @IBOutlet weak var PasswordText: UITextField!
     override func viewDidLoad() {
@@ -30,12 +32,21 @@ class LoginViewController: UIViewController {
             self.dismiss(animated: true, completion: nil)
             let next = self.storyboard?.instantiateViewController(withIdentifier: "tabs") as! UITabBarController
             self.present(next, animated: true, completion: nil)
+            PasswordText.text = ""
         }
         else{
-            print("nope")
+            LoginText.text = "Credentials do not match"
         }
     }
- 
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if loggedin == true {
+        if UIDevice.current.orientation.isLandscape {
+            self.dismiss(animated: true, completion: nil)
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
+            self.present(next, animated: true, completion: nil)
+        }
+        }
+    }
     
     /*
     // MARK: - Navigation

@@ -820,7 +820,7 @@
         <!--Login View Controller-->
         <scene sceneID="Zsq-6z-voO">
             <objects>
-                <viewController id="bN6-Sa-BSJ" customClass="LoginViewController" customModule="iphone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" id="bN6-Sa-BSJ" customClass="LoginViewController" customModule="iphone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TCq-rL-rLd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -856,12 +856,20 @@
                                     <action selector="LoginBtnPressed:" destination="bN6-Sa-BSJ" eventType="touchUpInside" id="aX6-h5-Sul"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter User name and Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CP8-O1-dQx">
+                                <rect key="frame" x="68" y="251" width="239" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0025530090060000002" green="0.25048478349999997" blue="0.1839510422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ccr-RR-xSU" firstAttribute="centerX" secondItem="TCq-rL-rLd" secondAttribute="centerX" id="2Ay-PK-beA"/>
                             <constraint firstItem="VlR-Oe-33I" firstAttribute="centerY" secondItem="TCq-rL-rLd" secondAttribute="centerY" constant="44" id="5je-8v-lr0"/>
+                            <constraint firstItem="CP8-O1-dQx" firstAttribute="centerX" secondItem="TCq-rL-rLd" secondAttribute="centerX" id="CAp-dP-Hjn"/>
                             <constraint firstItem="eSq-Wf-wM5" firstAttribute="centerY" secondItem="TCq-rL-rLd" secondAttribute="centerY" constant="-38.5" id="GuV-R9-hwG"/>
+                            <constraint firstItem="CP8-O1-dQx" firstAttribute="centerY" secondItem="TCq-rL-rLd" secondAttribute="centerY" constant="-72.25" id="JpC-2U-a2a"/>
                             <constraint firstItem="VlR-Oe-33I" firstAttribute="centerX" secondItem="TCq-rL-rLd" secondAttribute="centerX" id="LwX-ki-ayI"/>
                             <constraint firstItem="Ccr-RR-xSU" firstAttribute="centerY" secondItem="TCq-rL-rLd" secondAttribute="centerY" id="SpX-eL-bKS"/>
                             <constraint firstItem="eSq-Wf-wM5" firstAttribute="centerX" secondItem="TCq-rL-rLd" secondAttribute="centerX" id="lDt-sP-e2h"/>
@@ -870,6 +878,7 @@
                     </view>
                     <connections>
                         <outlet property="LoginButton" destination="VlR-Oe-33I" id="DYj-N0-w6N"/>
+                        <outlet property="LoginText" destination="CP8-O1-dQx" id="wIF-SJ-4hD"/>
                         <outlet property="PasswordText" destination="Ccr-RR-xSU" id="hu7-BJ-WxC"/>
                         <outlet property="UserNameText" destination="eSq-Wf-wM5" id="sov-a9-VYL"/>
                     </connections>
@@ -938,7 +947,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="student number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXx-Or-HRR">
-                                <rect key="frame" x="93" y="343.5" width="189.5" height="54.5"/>
+                                <rect key="frame" x="134.5" y="362" width="106.5" height="17.5"/>
                                 <fontDescription key="fontDescription" name="IDAutomationHC39MFreeVersion" family="IDAutomationHC39M Free Version" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1057,7 +1066,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="student number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAT-ew-R9K">
-                                <rect key="frame" x="29.5" y="365" width="316" height="100"/>
+                                <rect key="frame" x="99" y="365" width="177" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="FZX-Rm-OpP"/>
                                 </constraints>
