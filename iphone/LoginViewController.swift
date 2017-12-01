@@ -7,7 +7,6 @@
 //
 
 import UIKit
-var loggedin = false
 class LoginViewController: UIViewController {
 
 
@@ -27,18 +26,19 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var LoginButton: UIButton!
     @IBAction func LoginBtnPressed(_ sender: Any) {
-        if(UserNameText.text == "" && PasswordText.text == "")
+       if(UserNameText.text == "" && PasswordText.text == "")
         {
             self.dismiss(animated: true, completion: nil)
-            let next = self.storyboard?.instantiateViewController(withIdentifier: "tabs") as! UITabBarController
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
             self.present(next, animated: true, completion: nil)
             PasswordText.text = ""
+            loggedin = true
         }
         else{
             LoginText.text = "Credentials do not match"
         }
     }
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+    /*override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         if loggedin == true {
         if UIDevice.current.orientation.isLandscape {
             self.dismiss(animated: true, completion: nil)
@@ -46,6 +46,20 @@ class LoginViewController: UIViewController {
             self.present(next, animated: true, completion: nil)
         }
         }
+    }*/
+    /*
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated) // No need for semicolon
+    }
+    func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        if UIDevice.current.orientation.isLandscape {
+            //test.backgroundColor = UIColor.purple
+            print("hello")
+        } else {
+            //test.backgroundColor = UIColor.blue
+            print("bai")
+        }*/
     }
     
     /*
@@ -56,6 +70,6 @@ class LoginViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
-}
+}*/

@@ -23,9 +23,11 @@ class HomeViewController: UIViewController {
     }
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         if UIDevice.current.orientation.isLandscape {
+            if loggedin == true {
             self.dismiss(animated: true, completion: nil)
             let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
             self.present(next, animated: true, completion: nil)
+        }
         }
     }
 

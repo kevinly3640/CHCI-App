@@ -14,6 +14,28 @@ class LandscapeCard: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        switch UIApplication.shared.statusBarOrientation {
+        case .portrait:
+            
+            
+            break
+        case .portraitUpsideDown:
+            //do nothing
+            break
+        case .landscapeLeft:
+            //do nothing
+            break
+        case .landscapeRight:
+            //do nothing
+            break
+        case .unknown:
+            //do nothing
+            break
+        }
+     
+        
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +50,8 @@ class LandscapeCard: UIViewController {
             self.present(next, animated: true, completion: nil)
         }
     }
+    
+}
 
     /*
     // MARK: - Navigation
@@ -39,4 +63,4 @@ class LandscapeCard: UIViewController {
     }
     */
 
-}
+
