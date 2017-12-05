@@ -10,8 +10,11 @@ import UIKit
 
 class StudentCardViewController: UIViewController {
 
+    @IBOutlet weak var Img: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        Img.layer.cornerRadius = Img.frame.size.width/2
+        Img.clipsToBounds = true
 
         // Do any additional setup after loading the view.
     }
@@ -40,7 +43,6 @@ class StudentCardViewController: UIViewController {
     }
     
     
-    @IBOutlet weak var img: UIImageView!
     /*
     // MARK: - Navigation
 

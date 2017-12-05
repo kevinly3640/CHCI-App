@@ -934,114 +934,141 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="student card@1x" translatesAutoresizingMaskIntoConstraints="NO" id="z8T-cR-vBR">
-                                <rect key="frame" x="7.5" y="237.5" width="360" height="192"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="360" id="mkU-k1-x2H"/>
-                                    <constraint firstAttribute="height" constant="192" id="nJd-xq-ZeW"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEw-Se-FHU">
-                                <rect key="frame" x="331" y="531" width="28" height="22"/>
-                                <state key="normal" image="rotate@1x"/>
-                                <connections>
-                                    <action selector="CardRotate:" destination="AG1-Ih-j59" eventType="touchUpInside" id="fe6-nM-2dB"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_ swipe to change _@1x" translatesAutoresizingMaskIntoConstraints="NO" id="IpX-Z5-ycp">
-                                <rect key="frame" x="152.5" y="411.5" width="70" height="7"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo on card@1x" translatesAutoresizingMaskIntoConstraints="NO" id="3Eb-bW-hUM">
-                                <rect key="frame" x="311.5" y="267" width="19" height="28"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cameron Heights Collegiate Institute@1x" translatesAutoresizingMaskIntoConstraints="NO" id="F60-I0-ybe">
-                                <rect key="frame" x="132" y="279" width="130" height="37"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lukeambler_large" translatesAutoresizingMaskIntoConstraints="NO" id="CLg-Sv-8FI">
-                                <rect key="frame" x="39" y="265.5" width="51" height="68"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="BKe-a7-Fcv"/>
-                                    <constraint firstAttribute="width" constant="51" id="wuI-vm-Nu2"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="student number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXx-Or-HRR">
-                                <rect key="frame" x="134.5" y="362" width="106.5" height="17.5"/>
-                                <fontDescription key="fontDescription" name="IDAutomationHC39MFreeVersion" family="IDAutomationHC39M Free Version" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colm Ambler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXn-V0-WrB">
-                                <rect key="frame" x="29" y="382" width="68" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="THf-eM-jxk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmR-fS-iP6">
-                                <rect key="frame" x="325" y="382" width="12" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="l5m-ZZ-9rN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RibbonRibbon@1x" translatesAutoresizingMaskIntoConstraints="NO" id="ZrD-1B-p94">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="RibbonRibbon@1x" translatesAutoresizingMaskIntoConstraints="NO" id="IjI-jc-g88">
                                 <rect key="frame" x="0.0" y="20" width="375" height="71"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="qYS-nu-wgh"/>
+                                    <constraint firstAttribute="height" constant="71" id="Ovp-tT-n6S"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STUDENT CARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LI0-hK-YFq">
-                                <rect key="frame" x="88" y="24" width="198" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="STUDENT CARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQ6-hf-Ovv">
+                                <rect key="frame" x="87" y="24" width="198" height="43"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="6X3-6x-Wkz"/>
+                                    <constraint firstAttribute="height" constant="43" id="o3Z-B7-R7w"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cameron Logo" translatesAutoresizingMaskIntoConstraints="NO" id="pRn-F3-xU1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Cameron Logo" translatesAutoresizingMaskIntoConstraints="NO" id="pnp-cg-lTG">
                                 <rect key="frame" x="16" y="24" width="40" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="KLh-Az-WMd"/>
-                                    <constraint firstAttribute="height" constant="44" id="UzJ-HC-acY"/>
+                                    <constraint firstAttribute="width" constant="40" id="7tU-gi-NAL"/>
+                                    <constraint firstAttribute="height" constant="44" id="fIR-ZS-opZ"/>
                                 </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red Title Bar Rectangle@1x" translatesAutoresizingMaskIntoConstraints="NO" id="dRX-FL-zEC">
+                                <rect key="frame" x="0.0" y="256" width="375" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Colm Ambler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMf-dM-IDr">
+                                <rect key="frame" x="21" y="271" width="131" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123456789" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIy-jZ-c0L">
+                                <rect key="frame" x="243" y="270" width="115" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Grey Event Rectangle@1x" translatesAutoresizingMaskIntoConstraints="NO" id="bCd-IA-Aem">
+                                <rect key="frame" x="0.0" y="335" width="375" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Grey Event Rectangle@1x" translatesAutoresizingMaskIntoConstraints="NO" id="GKp-7d-0TV">
+                                <rect key="frame" x="0.0" y="377" width="375" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Way" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axy-lM-OSA">
+                                <rect key="frame" x="10" y="386" width="101" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Grey Event Rectangle@1x" translatesAutoresizingMaskIntoConstraints="NO" id="MPF-ix-enD">
+                                <rect key="frame" x="0.0" y="419" width="375" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CHCI Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7z2-gd-eW3">
+                                <rect key="frame" x="10" y="427" width="152" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Grey Event Rectangle@1x" translatesAutoresizingMaskIntoConstraints="NO" id="KFu-Il-u5L">
+                                <rect key="frame" x="0.0" y="461" width="375" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Book Guidance Appointment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxJ-ZP-2wR">
+                                <rect key="frame" x="10" y="471" width="349" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Grey Event Rectangle@1x" translatesAutoresizingMaskIntoConstraints="NO" id="Xuh-NX-IUh">
+                                <rect key="frame" x="0.0" y="520" width="375" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="student number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sx-Bj-oFM">
+                                <rect key="frame" x="82" y="531" width="189.5" height="54.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="IDAutomationHC39MFreeVersion" family="IDAutomationHC39M Free Version" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqp-zr-tZD">
+                                <rect key="frame" x="10" y="348" width="101" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpr-FT-pF0">
+                                <rect key="frame" x="0.0" y="335" width="375" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5a4-rv-9ux">
+                                <rect key="frame" x="0.0" y="301" width="125" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wc1-JC-mgL">
+                                <rect key="frame" x="124" y="301" width="125" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTJ-jF-5dc">
+                                <rect key="frame" x="0.0" y="421" width="375" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsm-ln-8EM">
+                                <rect key="frame" x="0.0" y="379" width="375" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPv-TN-HKS">
+                                <rect key="frame" x="0.0" y="464" width="375" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qHb-mY-J5O">
+                                <rect key="frame" x="249" y="301" width="125" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lukeambler_large" translatesAutoresizingMaskIntoConstraints="NO" id="JVQ-A4-lLx">
+                                <rect key="frame" x="111" y="98" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0025530090060000002" green="0.25048478349999997" blue="0.1839510422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="3Eb-bW-hUM" firstAttribute="centerY" secondItem="UK2-7m-wQb" secondAttribute="centerY" constant="-52.5" id="1cR-JU-coO"/>
-                            <constraint firstItem="ZrD-1B-p94" firstAttribute="trailing" secondItem="zVL-6O-V7y" secondAttribute="trailing" id="2eH-Q2-xBc"/>
-                            <constraint firstItem="CLg-Sv-8FI" firstAttribute="centerY" secondItem="UK2-7m-wQb" secondAttribute="centerY" constant="-34" id="2iE-ku-u1E"/>
-                            <constraint firstItem="qXn-V0-WrB" firstAttribute="centerX" secondItem="UK2-7m-wQb" secondAttribute="centerX" constant="-124.5" id="542-4o-306"/>
-                            <constraint firstItem="IpX-Z5-ycp" firstAttribute="top" secondItem="z8T-cR-vBR" secondAttribute="bottom" constant="-17.5" id="5gS-BE-u2P"/>
-                            <constraint firstItem="z8T-cR-vBR" firstAttribute="centerY" secondItem="UK2-7m-wQb" secondAttribute="centerY" id="9p8-72-g9c"/>
-                            <constraint firstItem="lmR-fS-iP6" firstAttribute="centerX" secondItem="UK2-7m-wQb" secondAttribute="centerX" constant="143.5" id="ErU-2L-7nZ"/>
-                            <constraint firstItem="ZrD-1B-p94" firstAttribute="leading" secondItem="zVL-6O-V7y" secondAttribute="leading" id="Fc7-e7-GXl"/>
-                            <constraint firstItem="3Eb-bW-hUM" firstAttribute="centerX" secondItem="UK2-7m-wQb" secondAttribute="centerX" constant="133.5" id="FjN-yE-zeD"/>
-                            <constraint firstItem="CLg-Sv-8FI" firstAttribute="centerX" secondItem="UK2-7m-wQb" secondAttribute="centerX" constant="-123" id="HKa-4g-ATu"/>
-                            <constraint firstItem="ZrD-1B-p94" firstAttribute="top" secondItem="zVL-6O-V7y" secondAttribute="top" id="I91-iN-CyY"/>
-                            <constraint firstItem="F60-I0-ybe" firstAttribute="centerX" secondItem="UK2-7m-wQb" secondAttribute="centerX" constant="9.5" id="IiU-KC-c3p"/>
-                            <constraint firstItem="LI0-hK-YFq" firstAttribute="top" secondItem="zVL-6O-V7y" secondAttribute="top" constant="4" id="Lcr-O8-x4i"/>
-                            <constraint firstItem="zVL-6O-V7y" firstAttribute="trailing" secondItem="WEw-Se-FHU" secondAttribute="trailing" constant="16" id="Qnm-Aa-EQS"/>
-                            <constraint firstItem="IpX-Z5-ycp" firstAttribute="centerX" secondItem="UK2-7m-wQb" secondAttribute="centerX" id="V0x-Hg-ran"/>
-                            <constraint firstItem="OXx-Or-HRR" firstAttribute="centerX" secondItem="UK2-7m-wQb" secondAttribute="centerX" id="Vmq-eE-1xw"/>
-                            <constraint firstItem="OXx-Or-HRR" firstAttribute="centerY" secondItem="UK2-7m-wQb" secondAttribute="centerY" constant="37" id="bKp-O3-JZw"/>
-                            <constraint firstItem="qXn-V0-WrB" firstAttribute="centerY" secondItem="UK2-7m-wQb" secondAttribute="centerY" constant="59" id="eO3-l8-QuQ"/>
-                            <constraint firstItem="LI0-hK-YFq" firstAttribute="centerX" secondItem="UK2-7m-wQb" secondAttribute="centerX" id="jaP-QV-O9R"/>
-                            <constraint firstItem="zVL-6O-V7y" firstAttribute="bottom" secondItem="WEw-Se-FHU" secondAttribute="bottom" constant="65" id="jdL-8d-2pi"/>
-                            <constraint firstItem="z8T-cR-vBR" firstAttribute="centerX" secondItem="UK2-7m-wQb" secondAttribute="centerX" id="ksG-Wi-Wi3"/>
-                            <constraint firstItem="F60-I0-ybe" firstAttribute="centerY" secondItem="UK2-7m-wQb" secondAttribute="centerY" constant="-36" id="lrz-hU-XQh"/>
-                            <constraint firstItem="pRn-F3-xU1" firstAttribute="top" secondItem="zVL-6O-V7y" secondAttribute="top" constant="4" id="nAE-Pj-edk"/>
-                            <constraint firstItem="pRn-F3-xU1" firstAttribute="leading" secondItem="zVL-6O-V7y" secondAttribute="leading" constant="16" id="qx1-3k-gFS"/>
-                            <constraint firstItem="lmR-fS-iP6" firstAttribute="centerY" secondItem="UK2-7m-wQb" secondAttribute="centerY" constant="59" id="wy7-l7-LBR"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zVL-6O-V7y"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="student card-1" id="0eQ-Li-t3T"/>
+                    <connections>
+                        <outlet property="Img" destination="JVQ-A4-lLx" id="7mv-bw-LV9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4C-Wb-Ofe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1129,12 +1156,10 @@
         <image name="RibbonRibbon@1x" width="750" height="154"/>
         <image name="Settings Icon@1x" width="53" height="53"/>
         <image name="Top Bar Title@1x" width="226" height="19"/>
-        <image name="_ swipe to change _@1x" width="70" height="7"/>
         <image name="announcments@1x" width="52" height="38"/>
         <image name="home" width="39" height="49"/>
         <image name="logo on card@1x" width="19" height="28"/>
         <image name="lukeambler_large" width="600" height="325"/>
-        <image name="rotate@1x" width="28" height="22"/>
         <image name="schedule" width="43" height="47"/>
         <image name="student card-1" width="48" height="32"/>
         <image name="student card@1x" width="279" height="163"/>
