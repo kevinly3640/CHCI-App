@@ -853,12 +853,14 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlR-Oe-33I">
-                                <rect key="frame" x="79.5" y="356" width="215" height="43"/>
+                                <rect key="frame" x="107" y="356" width="160" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="L7p-b4-CEN"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="mxd-XS-K4L"/>
                                 </constraints>
-                                <state key="normal" title="Login" backgroundImage="Block Background@1x"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="LoginBtnPressed:" destination="bN6-Sa-BSJ" eventType="touchUpInside" id="aX6-h5-Sul"/>
                                 </connections>
@@ -917,7 +919,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tE2-0a-bzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39" y="-906"/>
+            <point key="canvasLocation" x="38" y="-907"/>
         </scene>
         <!--Student Card View Controller-->
         <scene sceneID="Lnb-7j-4Pp">
