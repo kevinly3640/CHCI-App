@@ -8,36 +8,35 @@
 
 import UIKit
 
-class StudentCardViewController: UIViewController {
+extension UIImageView {
 
+}
+
+class StudentCardViewController: UIViewController {
+    
+    @IBOutlet weak var img: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        img.layer.cornerRadius = img.frame.size.width/2
+        img.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func CardRotate(_ sender: Any) {
-        let value = UIInterfaceOrientation.landscapeLeft.rawValue
-        UIDevice.current.setValue(value, forKey: "orientation")
-        func shouldAutorotate() -> Bool {
-            return true
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isLandscape {
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
+            self.present(next, animated: true, completion: nil)
         }
-        func supportedInterfaceOrientations() -> Int {
-            print("supportedInterfaceOrientations")
-            return Int(UIInterfaceOrientationMask.landscapeLeft.rawValue)
-        }
-        
-        func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
-            return UIInterfaceOrientation.landscapeLeft
-        }
-        let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
-        self.present(next, animated: true, completion: nil)
     }
+    
     
     
     /*
