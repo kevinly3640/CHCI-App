@@ -28,6 +28,7 @@ class LandscapeCard: UIViewController {
             
             let next = self.storyboard?.instantiateViewController(withIdentifier: "tabs") as! UITabBarController
             self.present(next, animated: true, completion: nil)
+            
         }
     }
     

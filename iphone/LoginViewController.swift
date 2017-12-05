@@ -33,9 +33,7 @@ class LoginViewController: UIViewController {
             let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
             self.present(next, animated: true, completion: nil)
             PasswordText.text = ""
-            loggedin = true
-            tabBarItem.isEnabled = true //next step, enable tab bar items
-            
+            loggedin = true            
             
         }
         /*   //EASTER EGGS >:3c
