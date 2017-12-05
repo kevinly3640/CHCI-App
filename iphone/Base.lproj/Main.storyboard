@@ -1015,6 +1015,9 @@
                         <viewLayoutGuide key="safeArea" id="zVL-6O-V7y"/>
                     </view>
                     <tabBarItem key="tabBarItem" image="student card-1" id="0eQ-Li-t3T"/>
+                    <connections>
+                        <outlet property="img" destination="CLg-Sv-8FI" id="QIh-GP-xKn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4C-Wb-Ofe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

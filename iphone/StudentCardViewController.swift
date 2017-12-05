@@ -40,6 +40,7 @@ class StudentCardViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var img: UIImageView!
     /*
     // MARK: - Navigation
 
