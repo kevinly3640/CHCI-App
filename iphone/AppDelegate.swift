@@ -8,6 +8,8 @@
 
 import UIKit
 
+var loggedin = false
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

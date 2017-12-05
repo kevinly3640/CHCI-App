@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bN6-Sa-BSJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wqy-QZ-N4Y">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -679,6 +679,10 @@
                                     <constraint firstAttribute="height" constant="42" id="OFv-am-yLJ"/>
                                 </constraints>
                                 <state key="normal" image="Settings Icon@1x"/>
+                                <connections>
+                                    <action selector="Settings:" destination="1rE-Va-5li" eventType="touchUpInside" id="8cQ-hR-bZq"/>
+                                    <segue destination="bN6-Sa-BSJ" kind="presentation" id="I6V-7a-ufG"/>
+                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAe-xE-DPW">
                                 <rect key="frame" x="-2" y="99" width="375" height="898"/>
@@ -812,6 +816,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="home" id="X8z-Hi-C4x"/>
                     <size key="freeformSize" width="375" height="1100"/>
+                    <connections>
+                        <outlet property="settings" destination="K1g-U6-U1M" id="ZtV-J6-wBp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6E-EA-0uY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -820,7 +827,7 @@
         <!--Login View Controller-->
         <scene sceneID="Zsq-6z-voO">
             <objects>
-                <viewController id="bN6-Sa-BSJ" customClass="LoginViewController" customModule="iphone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" id="bN6-Sa-BSJ" customClass="LoginViewController" customModule="iphone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TCq-rL-rLd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -856,12 +863,24 @@
                                     <action selector="LoginBtnPressed:" destination="bN6-Sa-BSJ" eventType="touchUpInside" id="aX6-h5-Sul"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter User name and Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CP8-O1-dQx">
+                                <rect key="frame" x="68" y="251" width="239" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cameron logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="uZo-NG-Bve">
+                                <rect key="frame" x="110" y="75" width="154" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0025530090060000002" green="0.25048478349999997" blue="0.1839510422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ccr-RR-xSU" firstAttribute="centerX" secondItem="TCq-rL-rLd" secondAttribute="centerX" id="2Ay-PK-beA"/>
                             <constraint firstItem="VlR-Oe-33I" firstAttribute="centerY" secondItem="TCq-rL-rLd" secondAttribute="centerY" constant="44" id="5je-8v-lr0"/>
+                            <constraint firstItem="CP8-O1-dQx" firstAttribute="centerX" secondItem="TCq-rL-rLd" secondAttribute="centerX" id="CAp-dP-Hjn"/>
                             <constraint firstItem="eSq-Wf-wM5" firstAttribute="centerY" secondItem="TCq-rL-rLd" secondAttribute="centerY" constant="-38.5" id="GuV-R9-hwG"/>
+                            <constraint firstItem="CP8-O1-dQx" firstAttribute="centerY" secondItem="TCq-rL-rLd" secondAttribute="centerY" constant="-72.25" id="JpC-2U-a2a"/>
                             <constraint firstItem="VlR-Oe-33I" firstAttribute="centerX" secondItem="TCq-rL-rLd" secondAttribute="centerX" id="LwX-ki-ayI"/>
                             <constraint firstItem="Ccr-RR-xSU" firstAttribute="centerY" secondItem="TCq-rL-rLd" secondAttribute="centerY" id="SpX-eL-bKS"/>
                             <constraint firstItem="eSq-Wf-wM5" firstAttribute="centerX" secondItem="TCq-rL-rLd" secondAttribute="centerX" id="lDt-sP-e2h"/>
@@ -870,6 +889,7 @@
                     </view>
                     <connections>
                         <outlet property="LoginButton" destination="VlR-Oe-33I" id="DYj-N0-w6N"/>
+                        <outlet property="LoginText" destination="CP8-O1-dQx" id="wIF-SJ-4hD"/>
                         <outlet property="PasswordText" destination="Ccr-RR-xSU" id="hu7-BJ-WxC"/>
                         <outlet property="UserNameText" destination="eSq-Wf-wM5" id="sov-a9-VYL"/>
                     </connections>
@@ -882,7 +902,7 @@
         <scene sceneID="Hp8-OA-Zk2">
             <objects>
                 <tabBarController storyboardIdentifier="tabs" id="Wqy-QZ-N4Y" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="Nav Bar Background@1x" selectionIndicatorImage="Active State@1x" id="1dv-pY-lVQ">
+                    <tabBar key="tabBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="Nav Bar Background@1x" selectionIndicatorImage="Active State@1x" id="1dv-pY-lVQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1096,6 +1116,7 @@
         <image name="Block Background@1x" width="215" height="61"/>
         <image name="Cameron Heights Collegiate Institute@1x" width="130" height="37"/>
         <image name="Cameron Logo" width="30" height="42"/>
+        <image name="Cameron logo-1" width="91" height="130"/>
         <image name="Grey Event Rectangle@1x" width="320" height="38"/>
         <image name="L U N C H@1x" width="42" height="8"/>
         <image name="Nav Bar Background@1x" width="375" height="58"/>

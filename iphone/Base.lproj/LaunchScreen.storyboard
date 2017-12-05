@@ -18,22 +18,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cameron logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="cej-kX-6Og">
-                                <rect key="frame" x="87" y="139" width="200" height="130"/>
+                                <rect key="frame" x="87" y="53" width="200" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="VkS-sm-ETs"/>
+                                    <constraint firstAttribute="width" constant="200" id="YQ5-dw-vsi"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HOME OF THE GOLDEN GAELS" translatesAutoresizingMaskIntoConstraints="NO" id="k5r-RC-pf6">
                                 <rect key="frame" x="51" y="321" width="272" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="8mw-dE-SVb"/>
+                                    <constraint firstAttribute="width" constant="272" id="JII-ze-6h7"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0025530090060000002" green="0.25048478349999997" blue="0.1839510422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k5r-RC-pf6" secondAttribute="trailing" constant="52" id="84D-hS-MdQ"/>
-                            <constraint firstItem="k5r-RC-pf6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="FrE-lC-Pr8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k5r-RC-pf6" secondAttribute="bottom" constant="321" id="H08-bD-0G6"/>
-                            <constraint firstItem="k5r-RC-pf6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Rr5-Zk-Vig"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cej-kX-6Og" secondAttribute="trailing" constant="88" id="YIT-E5-EJz"/>
-                            <constraint firstItem="cej-kX-6Og" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="119" id="erL-Kx-79c"/>
-                            <constraint firstItem="cej-kX-6Og" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="k0k-8S-upd"/>
-                            <constraint firstItem="k5r-RC-pf6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="usf-Ao-gb0"/>
+                            <constraint firstItem="k5r-RC-pf6" firstAttribute="top" secondItem="cej-kX-6Og" secondAttribute="bottom" constant="52" id="9fl-Pn-Exl"/>
+                            <constraint firstItem="cej-kX-6Og" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AVN-wQ-Qct"/>
+                            <constraint firstItem="k5r-RC-pf6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JXe-UN-U62"/>
+                            <constraint firstItem="cej-kX-6Og" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="SXG-qm-PHi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

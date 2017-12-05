@@ -118,12 +118,12 @@
 				3FF35C6B1FA37A6600DE7086 /* Main.storyboard */,
 				3FDFDC041FC5C2D100B715F0 /* HomeViewController.swift */,
 				3FD13CB91FC7515900A8DAC7 /* LandscapeCard.swift */,
-				3F838F201FCC5BB600AD11C9 /* LoginViewController.swift */,
 				3FDFDC061FC5C33800B715F0 /* ScheduleViewController.swift */,
 				3FDFDC081FC5C36E00B715F0 /* AnnouncementsViewController.swift */,
 				3FDFDC0A1FC5C39400B715F0 /* StudentCardViewController.swift */,
 				3FF35C6E1FA37A6600DE7086 /* Assets.xcassets */,
 				3F1A691D1FB1FF34006364B6 /* BarcodeFont.ttf */,
+				3F838F201FCC5BB600AD11C9 /* LoginViewController.swift */,
 				3FF35C701FA37A6600DE7086 /* LaunchScreen.storyboard */,
 				3FF35C731FA37A6600DE7086 /* Info.plist */,
 			);

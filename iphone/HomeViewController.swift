@@ -9,12 +9,17 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    @IBOutlet weak var settings: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
+      /*  if loggedin==true {
+            self.tabBarController?.tabBar.isHidden=false
+        }
+*/
         // Do any additional setup after loading the view.
+
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,9 +28,11 @@ class HomeViewController: UIViewController {
     }
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         if UIDevice.current.orientation.isLandscape {
+            if loggedin == true {
             self.dismiss(animated: true, completion: nil)
             let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
             self.present(next, animated: true, completion: nil)
+        }
         }
     }
 
@@ -39,4 +46,11 @@ class HomeViewController: UIViewController {
     }
     */
 
+    @IBAction func Settings(_ sender: Any) {
+        if loggedin == false{
+        self.tabBarController?.tabBar.isHidden=false
+        } else {
+            self.tabBarController?.tabBar.isHidden=true
+        }
+    }
 }

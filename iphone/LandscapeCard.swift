@@ -14,6 +14,8 @@ class LandscapeCard: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +30,8 @@ class LandscapeCard: UIViewController {
             self.present(next, animated: true, completion: nil)
         }
     }
+    
+}
 
     /*
     // MARK: - Navigation
@@ -39,4 +43,4 @@ class LandscapeCard: UIViewController {
     }
     */
 
-}
+
