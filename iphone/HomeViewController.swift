@@ -13,12 +13,11 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      /*  if loggedin==true {
+        if loggedin==true {
             self.tabBarController?.tabBar.isHidden=false
         }
-*/
         // Do any additional setup after loading the view.
-
+        
 
     }
 
