@@ -9,12 +9,17 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    @IBOutlet weak var settings: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
+      /*  if loggedin==true {
+            self.tabBarController?.tabBar.isHidden=false
+        }
+*/
         // Do any additional setup after loading the view.
+
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,4 +46,11 @@ class HomeViewController: UIViewController {
     }
     */
 
+    @IBAction func Settings(_ sender: Any) {
+        if loggedin == false{
+        self.tabBarController?.tabBar.isHidden=false
+        } else {
+            self.tabBarController?.tabBar.isHidden=true
+        }
+    }
 }

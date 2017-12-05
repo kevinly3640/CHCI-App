@@ -680,6 +680,7 @@
                                 </constraints>
                                 <state key="normal" image="Settings Icon@1x"/>
                                 <connections>
+                                    <action selector="Settings:" destination="1rE-Va-5li" eventType="touchUpInside" id="8cQ-hR-bZq"/>
                                     <segue destination="bN6-Sa-BSJ" kind="presentation" id="I6V-7a-ufG"/>
                                 </connections>
                             </button>
@@ -815,6 +816,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="home" id="X8z-Hi-C4x"/>
                     <size key="freeformSize" width="375" height="1100"/>
+                    <connections>
+                        <outlet property="settings" destination="K1g-U6-U1M" id="ZtV-J6-wBp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6E-EA-0uY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -865,6 +869,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cameron logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="uZo-NG-Bve">
+                                <rect key="frame" x="110" y="75" width="154" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0025530090060000002" green="0.25048478349999997" blue="0.1839510422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -894,7 +902,7 @@
         <scene sceneID="Hp8-OA-Zk2">
             <objects>
                 <tabBarController storyboardIdentifier="tabs" id="Wqy-QZ-N4Y" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="Nav Bar Background@1x" selectionIndicatorImage="Active State@1x" id="1dv-pY-lVQ">
+                    <tabBar key="tabBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="Nav Bar Background@1x" selectionIndicatorImage="Active State@1x" id="1dv-pY-lVQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -911,7 +919,7 @@
             </objects>
             <point key="canvasLocation" x="39" y="-906"/>
         </scene>
-        <!--card-->
+        <!--Student Card View Controller-->
         <scene sceneID="Lnb-7j-4Pp">
             <objects>
                 <viewController id="AG1-Ih-j59" customClass="StudentCardViewController" customModule="iphone" customModuleProvider="target" sceneMemberID="viewController">
@@ -1026,7 +1034,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zVL-6O-V7y"/>
                     </view>
-                    <tabBarItem key="tabBarItem" enabled="NO" title="card" image="student card-1" id="0eQ-Li-t3T"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="" image="student card-1" id="0eQ-Li-t3T"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4C-Wb-Ofe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1105,6 +1113,7 @@
         <image name="Block Background@1x" width="215" height="61"/>
         <image name="Cameron Heights Collegiate Institute@1x" width="130" height="37"/>
         <image name="Cameron Logo" width="30" height="42"/>
+        <image name="Cameron logo-1" width="91" height="130"/>
         <image name="Grey Event Rectangle@1x" width="320" height="38"/>
         <image name="L U N C H@1x" width="42" height="8"/>
         <image name="Nav Bar Background@1x" width="375" height="58"/>

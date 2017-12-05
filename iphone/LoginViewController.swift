@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        loggedin = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,7 +34,21 @@ class LoginViewController: UIViewController {
             self.present(next, animated: true, completion: nil)
             PasswordText.text = ""
             loggedin = true
+            tabBarItem.isEnabled = true //next step, enable tab bar items
+            
+            
         }
+        /*   //EASTER EGGS >:3c
+       else if UserNameText.text == "landon" {
+       LoginText.text = "nice meme"
+       }
+       else if UserNameText.text == "kevin" {
+        LoginText.text = "no, go back"
+       }
+       else if UserNameText.text == "colm" {
+        LoginText.text = "👌"
+       }
+ */
         else{
             LoginText.text = "Credentials do not match"
         }

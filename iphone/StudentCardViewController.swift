@@ -39,7 +39,6 @@ class StudentCardViewController: UIViewController {
         self.present(next, animated: true, completion: nil)
     }
     
-    
     /*
     // MARK: - Navigation
 

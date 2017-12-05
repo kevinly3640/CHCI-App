@@ -15,26 +15,6 @@ class LandscapeCard: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        switch UIApplication.shared.statusBarOrientation {
-        case .portrait:
-            
-            
-            break
-        case .portraitUpsideDown:
-            //do nothing
-            break
-        case .landscapeLeft:
-            //do nothing
-            break
-        case .landscapeRight:
-            //do nothing
-            break
-        case .unknown:
-            //do nothing
-            break
-        }
-     
-        
     
     }
 
