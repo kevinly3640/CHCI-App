@@ -297,7 +297,7 @@
                                     <constraint firstAttribute="height" constant="43" id="tc6-vW-f42"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0001131974395" green="0.29800841970000003" blue="0.017611926470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cameron Logo" translatesAutoresizingMaskIntoConstraints="NO" id="8wt-2R-IZF">
@@ -612,7 +612,7 @@
                                     <constraint firstAttribute="height" constant="43" id="HeS-1N-bNy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0001131974395" green="0.29800841970000003" blue="0.017611926470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cameron Logo" translatesAutoresizingMaskIntoConstraints="NO" id="jgu-cb-YHq">
@@ -669,7 +669,7 @@
                                     <constraint firstAttribute="height" constant="43" id="PO3-WO-hd5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0001131974395" green="0.29800841970000003" blue="0.017611926470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1g-U6-U1M">
@@ -946,7 +946,7 @@
                                     <constraint firstAttribute="height" constant="43" id="bNU-gL-QZt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0001131974395" green="0.29800841970000003" blue="0.017611926470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cameron Logo" translatesAutoresizingMaskIntoConstraints="NO" id="7WF-01-3gG">
@@ -987,7 +987,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="student number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTV-9r-xY2">
-                                <rect key="frame" x="93" y="531" width="189.5" height="54.5"/>
+                                <rect key="frame" x="134.5" y="531" width="106.5" height="54.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54.5" id="0Yh-ld-pQz"/>
                                 </constraints>
@@ -1191,7 +1191,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="student number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAT-ew-R9K">
-                                <rect key="frame" x="29.5" y="365" width="316" height="100"/>
+                                <rect key="frame" x="99" y="365" width="177" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="FZX-Rm-OpP"/>
                                 </constraints>
