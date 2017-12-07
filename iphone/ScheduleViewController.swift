@@ -21,13 +21,16 @@ class ScheduleViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    //function for when the user turns the device
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        //check if the user turns it landscape
         if UIDevice.current.orientation.isLandscape {
+            //check if user is logged in
             if loggedin == true {
-            let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
-            self.present(next, animated: true, completion: nil)
-        }
+                self.dismiss(animated: true, completion: nil)//close current tab
+                let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard//prepare to go to landscape card
+                self.present(next, animated: true, completion: nil)//show landscape card
+            }
         }
     }
 

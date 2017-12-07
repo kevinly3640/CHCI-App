@@ -8,7 +8,7 @@
 
 import UIKit
 
-var loggedin = false
+var loggedin = false// variable for when the user is logged in or not
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

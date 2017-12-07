@@ -22,12 +22,13 @@ class LandscapeCard: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    //function for when the user turns their device
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        //check if device is portrait
         if UIDevice.current.orientation.isPortrait {
-            
-            let next = self.storyboard?.instantiateViewController(withIdentifier: "tabs") as! UITabBarController
-            self.present(next, animated: true, completion: nil)
+            //self.dismiss is missing so the student card can continue to show up
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "tabs") as! UITabBarController//prepare to go to tab bar controller
+            self.present(next, animated: true, completion: nil)//go to tab bar controller
             
         }
     }
