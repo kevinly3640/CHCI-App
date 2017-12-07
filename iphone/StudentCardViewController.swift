@@ -24,22 +24,17 @@ class StudentCardViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func CardRotate(_ sender: Any) {
-        let value = UIInterfaceOrientation.landscapeLeft.rawValue
-        UIDevice.current.setValue(value, forKey: "orientation")
-        func shouldAutorotate() -> Bool {
-            return true
+    //function for when the user turns the device
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        //check if the user turns it landscape
+        if UIDevice.current.orientation.isLandscape {
+            //check if user is logged in
+            if loggedin == true {
+                self.dismiss(animated: true, completion: nil)//close current tab
+                let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard//prepare to go to landscape card
+                self.present(next, animated: true, completion: nil)//show landscape card
+            }
         }
-        func supportedInterfaceOrientations() -> Int {
-            print("supportedInterfaceOrientations")
-            return Int(UIInterfaceOrientationMask.landscapeLeft.rawValue)
-        }
-        
-        func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
-            return UIInterfaceOrientation.landscapeLeft
-        }
-        let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
-        self.present(next, animated: true, completion: nil)
     }
     
     
