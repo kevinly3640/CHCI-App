@@ -48,8 +48,8 @@ class HomeViewController: UIViewController {
     @IBAction func Settings(_ sender: Any) {
         if loggedin == false{
         self.tabBarController?.tabBar.isHidden=false
-        } else {
+        } /*else {
             self.tabBarController?.tabBar.isHidden=true
-        }
+        }*/
     }
 }

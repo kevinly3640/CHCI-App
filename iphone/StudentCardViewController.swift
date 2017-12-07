@@ -24,7 +24,7 @@ class StudentCardViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func CardRotate(_ sender: Any) {
+    /*@IBAction func CardRotate(_ sender: Any) {
         let value = UIInterfaceOrientation.landscapeLeft.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
         func shouldAutorotate() -> Bool {
@@ -40,7 +40,7 @@ class StudentCardViewController: UIViewController {
         }
         let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
         self.present(next, animated: true, completion: nil)
-    }
+    }*/
     
     
     /*

@@ -49,6 +49,7 @@ class LoginViewController: UIViewController {
  */
         else{
             LoginText.text = "Credentials do not match"
+        PasswordText.text = ""
         }
     }
     /*override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
