@@ -50,10 +50,12 @@ class HomeViewController: UIViewController {
     }
     */
     //function for when user taps setting button(Temporary login button)
+    @IBOutlet weak var settingbutt: UIButton!
     @IBAction func Settings(_ sender: Any) {
         //check if user is not logged in
         if loggedin == false{
-        self.tabBarController?.tabBar.isHidden=false
+            self.tabBarController?.tabBar.isHidden=false
+            settingbutt.isEnabled = false
         } /*else {
             self.tabBarController?.tabBar.isHidden=true
         }*/

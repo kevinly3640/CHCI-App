@@ -25,6 +25,7 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
     @IBOutlet weak var LoginButton: UIButton!
     @IBAction func LoginBtnPressed(_ sender: Any) {
        if(UserNameText.text == "" && PasswordText.text == "")
@@ -33,7 +34,8 @@ class LoginViewController: UIViewController {
             let next = self.storyboard?.instantiateViewController(withIdentifier: "landscape") as! LandscapeCard
             self.present(next, animated: true, completion: nil)
             PasswordText.text = ""
-            loggedin = true            
+            loggedin = true
+            
             
         }
         /*   //EASTER EGGS >:3c

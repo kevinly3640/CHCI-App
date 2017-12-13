@@ -43,6 +43,7 @@
 /* Begin PBXFileReference section */
 		3F1A691D1FB1FF34006364B6 /* BarcodeFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BarcodeFont.ttf; sourceTree = "<group>"; };
 		3F1A691E1FB60787006364B6 /* IDAutomationHC39M Free Version.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IDAutomationHC39M Free Version.ttf"; sourceTree = "<group>"; };
+		3F5F50811FD996800004B9D3 /* fre3of9x.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fre3of9x.ttf; sourceTree = "<group>"; };
 		3F838F201FCC5BB600AD11C9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FD13CB91FC7515900A8DAC7 /* LandscapeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeCard.swift; sourceTree = "<group>"; };
 		3FDFDC041FC5C2D100B715F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +124,7 @@
 				3FDFDC0A1FC5C39400B715F0 /* StudentCardViewController.swift */,
 				3FF35C6E1FA37A6600DE7086 /* Assets.xcassets */,
 				3F1A691D1FB1FF34006364B6 /* BarcodeFont.ttf */,
+				3F5F50811FD996800004B9D3 /* fre3of9x.ttf */,
 				3F838F201FCC5BB600AD11C9 /* LoginViewController.swift */,
 				3FF35C701FA37A6600DE7086 /* LaunchScreen.storyboard */,
 				3FF35C731FA37A6600DE7086 /* Info.plist */,

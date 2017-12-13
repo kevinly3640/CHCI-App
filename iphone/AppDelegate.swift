@@ -9,6 +9,9 @@
 import UIKit
 
 var loggedin = false// variable for when the user is logged in or not
+var cardYes = false
+var fitnessYes = true
+var bookYes = false
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
