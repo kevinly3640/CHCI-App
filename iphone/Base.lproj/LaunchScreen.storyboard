@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cameron logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="cej-kX-6Og">
-                                <rect key="frame" x="87" y="53" width="200" height="216"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="216" id="VkS-sm-ETs"/>
-                                    <constraint firstAttribute="width" constant="200" id="YQ5-dw-vsi"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HOME OF THE GOLDEN GAELS" translatesAutoresizingMaskIntoConstraints="NO" id="k5r-RC-pf6">
                                 <rect key="frame" x="51" y="321" width="272" height="25"/>
                                 <constraints>
@@ -31,13 +24,20 @@
                                     <constraint firstAttribute="width" constant="272" id="JII-ze-6h7"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cameron logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="52Z-It-eD5">
+                                <rect key="frame" x="142" y="183" width="91" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="1Up-uZ-2dI"/>
+                                    <constraint firstAttribute="height" constant="130" id="jE0-1a-7Xq"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0025530090060000002" green="0.25048478349999997" blue="0.1839510422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="k5r-RC-pf6" firstAttribute="top" secondItem="cej-kX-6Og" secondAttribute="bottom" constant="52" id="9fl-Pn-Exl"/>
-                            <constraint firstItem="cej-kX-6Og" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AVN-wQ-Qct"/>
                             <constraint firstItem="k5r-RC-pf6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JXe-UN-U62"/>
-                            <constraint firstItem="cej-kX-6Og" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="SXG-qm-PHi"/>
+                            <constraint firstItem="k5r-RC-pf6" firstAttribute="top" secondItem="52Z-It-eD5" secondAttribute="bottom" constant="8" id="X9U-Ll-0ms"/>
+                            <constraint firstItem="k5r-RC-pf6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZBT-Hu-9UJ"/>
+                            <constraint firstItem="52Z-It-eD5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xHM-1P-J3p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
